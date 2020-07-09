@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+
+<title>Calculator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<script>
+	function cal(result){
+		ans.displayans.value=ans.displayans.value+result;
+	}
+	</script>
+
+	<div class="container">
+		<form name="ans">
+
+		<div class="display">
+			<input type="text" placeholder="0" name="displayans" />
+		</div>
+
+
+			<div class="buttons">
+
+        <div class="row">
+        <input type="button" name="1" value="1" onClick="cal(1)">
+          <input type="button" name="2" value="2" onClick="cal(2)">
+          <input type="button" name="3" value="3" onClick="cal(3)">
+          <input type="button" name="mul" value="*" onClick="cal(mul.value)">
+        </div>
+
+        <div class="row">
+        <input type="button" name="4" value="4" onClick="cal(4)">
+          <input type="button" name="5" value="5" onClick="cal(5)">
+          <input type="button" name="6" value="6" onClick="cal(6)">
+          <input type="button" name="sub" value="-" onClick="cal(sub.value)">
+        </div>
+
+			  <div class="row">
+			  	<input type="button" name="7" value="7" onClick="cal(7)">
+				  <input type="button" name="8" value="8" onClick="cal(8)">
+				  <input type="button" name="9" value="9" onClick="cal(9)">
+				  <input type="button" name="add" value="+" onClick="cal(add.value)">
+				</div>
+
+				<div class="row">
+				<input type="button" name="0" value="0" onClick="cal(0)">
+				  <input type="button" name="dot" value="." onClick="cal(dot.value)">
+				  <input type="button" name="div" value="/" onClick="cal(div.value)">
+				  <input type="button" class="equal" value="=" onClick="displayans.value=eval(displayans.value)">
+				</div>
+
+			</div>
+
+		</form>
+	</div>
+</body>
+
+</html>
